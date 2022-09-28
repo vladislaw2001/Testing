@@ -87,7 +87,7 @@ namespace Testing
             c.SumaOfNumber();
             Console.ReadKey();
 
-
+            
 
 
         }
