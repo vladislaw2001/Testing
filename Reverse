@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+//Create string = "This is string"
+//reverce it to = "sihT si gnirts" 
+
+namespace Project
+{
+    internal class Program
+    {
+
+       
+
+        static void Main(string[] args)
+        {
+
+            string message = "This is message";
+            string[] new_message = message.Split(' ');
+            string new_array = null ;
+            foreach(var ar in new_message)
+            {
+                new_array +=GetString(ar) + " ";
+            }
+            Console.Write(new_array);
+           
+            
+            
+            
+            
+
+            Console.ReadLine();
+        }
+
+        public static string GetString(string message)
+        {
+            string arr = null;
+            foreach(var mes in message.Reverse())
+            {
+                arr += mes;
+            }
+            return arr;
+        }
+    }
+}
